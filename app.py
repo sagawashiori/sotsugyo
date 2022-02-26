@@ -15,6 +15,12 @@ def greet(name):
 def test():
     return  render_template("base.html")    
 
+
+@app.route("/login")
+def login():
+    return render_template("login.html")
+
+
 @app.route("/test_val")
 def test_val():
     py_name ="にんじゃわんこ"
