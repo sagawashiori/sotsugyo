@@ -11,9 +11,15 @@ def hello_world():
 def greet(name):
     return name + "さん、こんばんは！"
 
-@app.route("/test")
+@app.route("/base")
 def test():
-    return  render_template("index.html")    
+    return  render_template("base.html")    
+
+
+@app.route("/login")
+def login():
+    return render_template("login.html")
+
 
 @app.route("/test_val")
 def test_val():
