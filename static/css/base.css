@@ -36,6 +36,8 @@ header{
 	height: 50px;
 	line-height: 50px;
 	border-bottom: 0.1px solid #7C99AC;
+	display: flex;
+	justify-content: space-between;
 	
 }
 header .hum_menu{
@@ -64,4 +66,9 @@ header .hum_menu span{
 }
 header .bd{
 	border-bottom:1px solid #7C99AC;
+}
+
+.header_logo img{
+	width: 50px;
+	margin: 5px;
 }
