@@ -6,14 +6,18 @@
 	<link rel="stylesheet" href="../static/css/login.css" />
 </head>
 
-<div>ログイン</div>
+<div class="title">ログイン</div>
+
 <img src="../static/img/アプリメインアイコン.svg" alt="">
+
 <form action="/login" method="post">
-    メールアドレス：
-    <input type="text" name="name" maxlength="100">
-    パスワード：
-    <input type="password" name="password" maxlength="100">
-    <input type="submit" name="save" value="ログイン">
+    <div>
+			<input class="form_box" type="text" name="name" maxlength="100" placeholder="メールアドレス">
+		</div>
+		<div>
+			<input class="form_box" type="password" name="password" maxlength="100" placeholder="パスワード">
+		</div>
+		<input class="login_btn" type="submit" name="save" value="ログイン">
 </form>
 
 {% endblock %}
