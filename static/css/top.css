@@ -1,3 +1,9 @@
+.top_main_img {
+	margin-bottom: 20px;
+}
+.top_main_img img {
+	width: 280px;
+}
 button{
 	background-color: #92A9BD;
 	color: #FFFFFF;
@@ -5,4 +11,5 @@ button{
 	height: 50px;
 	border: none;
 	border-radius: 10px;
+	margin-bottom: 20px;
 }
