@@ -3,23 +3,16 @@ from flask import Flask,render_template
 
 app = Flask(__name__)
 
-@app.route("/helloworld")
-def hello_world():
-    return "<p>Hello, World!</p>"
 
-@app.route("/user/<name>")
-def greet(name):
-    return name + "さん、こんばんは！"
-
-@app.route("/test")
+@app.route("/base")
 def test():
-    return  render_template("index.html")    
+    return  render_template("base.html")    
 
-@app.route("/test_val")
-def test_val():
-    py_name ="にんじゃわんこ"
-    py_age =14
-    return render_template("index_val.html",name =py_name ,age =py_age)
+
+@app.route("/login")
+def login():
+    return render_template("login.html")
+
 
 @app.route("/list")
 def task_list():
