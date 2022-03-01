@@ -2,9 +2,7 @@
 
 {% block content%}
 
-<head>
-	<link rel="stylesheet" href="../static/css/login.css" />
-</head>
+{% block link %}<link rel="stylesheet" href="../static/css/login.css" />{% endblock %}
 
 <div class="title">ログイン</div>
 
@@ -12,7 +10,7 @@
 
 <form action="/login" method="post">
     <div>
-			<input class="form_box" type="text" name="name" maxlength="100" placeholder="メールアドレス">
+			<input class="form_box" type="text" name="mail" maxlength="100" placeholder="メールアドレス">
 		</div>
 		<div>
 			<input class="form_box" type="password" name="password" maxlength="100" placeholder="パスワード">

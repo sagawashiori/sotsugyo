@@ -72,3 +72,14 @@ header .bd{
 	width: 50px;
 	margin: 5px;
 }
+
+.m_menu {
+	max-width: 1000px;
+	margin: 0 auto ;
+
+}
+nav{
+	background-color: #7C99AC;
+	padding:20px 3%;
+	color:#fff
+}
