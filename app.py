@@ -14,19 +14,9 @@ def test():
 def top():
     return render_template("top.html")
 
-
-@app.route("/login", methods=["POST"])
-def move_login():
-    return render_template("login.html")
-
 @app.route("/login")
 def login():
     return render_template("login.html")
-
-
-# @app.route("/register", methods=["POST"])
-# def move_register():
-#     return render_template("register.html")
 
 @app.route("/register")
 def register():

@@ -19,7 +19,7 @@
 	justify-content: center;
 	align-items: center;
 }
-button {
+.button {
 	background-color: #92A9BD;
 	color: #FFFFFF;
 	width: 210px;
@@ -29,5 +29,6 @@ button {
 	margin-bottom: 20px;
 	margin-left: 5px;
 	font-size: 16px;
+	line-height: 3;
 }
 
