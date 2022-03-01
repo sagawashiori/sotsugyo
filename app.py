@@ -52,33 +52,7 @@ def login_post():
 
     conn = sqlite3.connect('sotu.db')
     c = conn.cursor()
-<<<<<<< HEAD
-    c.execute("SELECT * FROM tasks;")
-    task_list = []
-    
-    for row in c.fetchall():
-        task_list.append({"id":row[0],"task":row[1]})
-    
-    c.close()
-    return render_template("task_list.html",task_list=task_list)
 
-@app.route("/add")
-def add_get():
-    return render_template("add.html")
-
-@app.route("/main_upload")
-def upload():
-    return render_template("main_upload.html")
-
-@app.route("/image_upload")
-def upload2():
-    return render_template("image_upload.html")
-    
-@app.route("/second_top")
-def top2():
-    return render_template("second_top.html")
-    
-=======
     c.execute('SELECT id FROM users WHERE mail = ? AND pass = ?',
               (mail, password))
     user = c.fetchone()  # (1, )
@@ -127,6 +101,5 @@ def release():
 
 #--------sagawa-san編集箇所----------#
 
->>>>>>> f9885eef495721b7dc5f88a2df3fc2186e284bc6
 if __name__ == '__main__':
     app.run(debug =True)
