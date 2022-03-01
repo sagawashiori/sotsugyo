@@ -6,16 +6,23 @@
 	<link rel="stylesheet" href="../static/css/top.css" />
 </head>
 
-<div class="top_main_img">
-	<img src="../static/img/top_img.svg" alt="top_img">
+<div class="main_box">
+	<h3>「自分にとって大切なモノだけをもつこと」</h3>
+	<div class="top_main_img">
+		<img src="../static/img/top_img.svg" alt="top_img">
+	</div>
 </div>
 
-<form class="button" action="/login" method="POST">
-	<button>ログイン</button>
-</form>
-<form class="button" action="/register" method="POST">
-<button>会員登録</button>
-</form>
+<div class="top_btn">
+	<form class="button" action="/login" method="POST">
+		<button>ログイン</button>
+	</form>
+	<form class="button" action="/register" method="POST">
+	<button>会員登録</button>
+	</form>
+</div>
+
+
 
 {% endblock %}
 
