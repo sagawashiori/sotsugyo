@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+{% block content%}
+
+{% block link %}<link rel="stylesheet" href="../static/css/register.css" />{% endblock %}
+</head>
+
+<div class="title">新規会員登録</div>
+
+<img src="../static/img/アプリメインアイコン.svg" alt="">
+
+<form action="/register" method="post">
+    <div>
+			<input class="form_box" type="text" name="name" maxlength="100" placeholder="アカウント名">
+		</div>
+		<div>
+			<input class="form_box" type="text" name="mail" maxlength="100" placeholder="メールアドレス">
+		</div>
+		<div>
+			<input class="form_box" type="password" name="password" maxlength="100" placeholder="パスワード">
+		</div>
+		<input class="login_btn" type="submit" name="save" value="登録">
+</form>
+
+{% endblock %}
+
