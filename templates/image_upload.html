@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block content%}
+
+<head>
+	<link rel="stylesheet" href="../static/css/image_upload.css" />
+</head>
+
+<h1>アイテムの画像をアップロードして下さい</h1>
+
+
+<form action="/main_upload" method="post">
+	<input class="upload_btn" type="submit" name="upload" value="＋">
+</form>
+
+<div class="footer_fix_btn">
+	<a href="../templates/home.html"><i class="fa fa-fw solid fa-house"></i></a>
+	<a href="../templates/main_upload.html"><i class="fa fa-fw solid fa-square-plus"></i></a>
+	<a href="../templates/release.html"><i class="fa fa-fw solid fa-trash-can"></i></a>
+</div>
+
+{% endblock %}
+

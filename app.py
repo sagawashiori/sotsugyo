@@ -30,6 +30,18 @@ def task_list():
 @app.route("/add")
 def add_get():
     return render_template("add.html")
+
+@app.route("/main_upload")
+def upload():
+    return render_template("main_upload.html")
+
+@app.route("/image_upload")
+def upload2():
+    return render_template("image_upload.html")
+    
+@app.route("/second_top")
+def top2():
+    return render_template("second_top.html")
     
 if __name__ == '__main__':
     app.run(debug =True)

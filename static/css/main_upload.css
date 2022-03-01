@@ -1,0 +1,40 @@
+
+.form_box1{
+    width: 250px;
+	height: 50px;
+	margin-bottom: 40px;
+}
+
+.category{
+    width: 258px;
+	height: 55px;
+	margin-bottom: 40px;
+
+    
+    }
+
+
+.form_box2 {
+    width: 250px;
+	height: 50px;
+	margin-bottom: 40px;
+	
+}
+.register_btn {
+	background-color: #92A9BD;
+	color: #FFFFFF;
+	width: 257px;
+	height: 50px;
+
+}
+
+.footer_fix_btn{
+	font-size: 35px;
+	background: #7C99AC;
+	color: #fff;
+	/* position: absolute;
+	bottom: 0; */
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+}

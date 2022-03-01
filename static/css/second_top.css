@@ -1,0 +1,27 @@
+h1{
+    font-size: 20px;
+    margin: 60px;
+}
+
+.text p{
+    text-align: center;
+}
+
+p{
+    font-size: 10px;
+    display: inline-block;
+    text-align:left;
+    width: 100%;
+}
+
+
+.footer_fix_btn{
+	font-size: 35px;
+	background: #7C99AC;
+	color: #fff;
+	/* position: absolute;
+	bottom: 0; */
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+}

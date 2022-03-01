@@ -1,0 +1,46 @@
+{% extends 'base.html' %}
+
+{% block content%}
+
+<head>
+	<link rel="stylesheet" href="../static/css/main_upload.css" />
+</head>
+
+
+<body>
+    <form action="/home" method="post">
+
+        <div>
+            <img src="https://www.felissimo.co.jp/image_link/91AA57F29408FBBA0574C63AC4AB05F5.jpg" alt="セーターの画像" width="352" height="230">
+        </div>
+
+    <div>
+			<input class="form_box1" type="text" name="name" maxlength="100" placeholder="アイテム名">
+		</div>
+		  
+            <select class="category">        
+                <optgroup label=“カテゴリ“>
+                    <option value=“ファッション“>ファッション</option>
+                    <option value=“家具・家電“>家具・家電</option>
+                    <option value=“キッチン周り“>キッチン周り</option>
+                    <option value=“美容品“>美容品</option>
+                    <option value=“その他“>その他</option>
+                </optgroup>
+            </select> 
+           
+
+        <div>
+            <input class="form_box2" type="date" name="date" maxlength="100" placeholder="カレンダー">
+        </div>
+		<input class="register_btn" type="submit" name="save" value="登録">
+    </form>
+
+    <div class="footer_fix_btn">
+        <a href="../templates/home.html"><i class="fa fa-fw solid fa-house"></i></a>
+        <a href="../templates/main_upload.html"><i class="fa fa-fw solid fa-square-plus"></i></a>
+        <a href="../templates/release.html"><i class="fa fa-fw solid fa-trash-can"></i></a>
+    </div>
+    
+</body>
+
+{% endblock %}
