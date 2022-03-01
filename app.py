@@ -1,5 +1,5 @@
 import sqlite3
-from flask import Flask,render_template
+from flask import Flask, render_template, request, redirect
 
 app = Flask(__name__)
 
@@ -24,13 +24,27 @@ def login():
     return render_template("login.html")
 
 
-@app.route("/register", methods=["POST"])
-def move_register():
-    return render_template("register.html")
+# @app.route("/register", methods=["POST"])
+# def move_register():
+#     return render_template("register.html")
 
 @app.route("/register")
 def register():
     return render_template("register.html")
+
+
+@app.route('/register', methods=['POST'])
+def register_post():
+    name = request.form.get('name')
+    mail = request.form.get('mail')
+    password = request.form.get('password')
+    conn = sqlite3.connect('sotu.db')
+    c = conn.cursor()
+    c.execute("INSERT INTO users VALUES(null,?,?,?)", (name, mail, password))
+    conn.commit()
+    conn.close()
+    return redirect('/login')
+
 
 #--------maha編集箇所----------#
 
