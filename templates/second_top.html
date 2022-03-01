@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+
+{% block content%}
+
+<head>
+	<link rel="stylesheet" href="../static/css/second_top.css" />
+</head>
+
+<h1>使い方</h1>
+
+<div class="text">
+    <p>1. アップロードしたい画像を選択する</p>
+    <p>2. アップロードした画像のアイテム情報を入力する、選択する</p>
+    <p>3. 登録ボタンをクリックして完了！</p>
+</div>
+
+<img class="photo1" src="../static/img/スクリーンショット 2022-02-28 16.58.06.png" alt=""width="50" height="100">
+<p>→</p>
+<img class="photo2" src="../static/img/スクリーンショット 2022-02-28 16.59.06.png" alt=""width="50" height="100">
+<p>→</p>
+<img class="photo3" src="../static/img/スクリーンショット 2022-03-01 20.32.39.png" alt=""width="60" height="30">
+<h2>手放すリストについて</h2>
+
+<form action="/image_upload" method="post">
+	<input class="transition_btn" type="submit" name="transition" value="はじめる">
+</form>
+
+<div class="footer_fix_btn">
+	<a href="../templates/home.html"><i class="fa fa-fw solid fa-house"></i></a>
+	<a href="../templates/main_upload.html"><i class="fa fa-fw solid fa-square-plus"></i></a>
+	<a href="../templates/release.html"><i class="fa fa-fw solid fa-trash-can"></i></a>
+</div>
+
+{% endblock %}
+

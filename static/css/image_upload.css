@@ -1,0 +1,20 @@
+h1{
+    font-size: 20px;
+    margin: 100px;
+}
+
+.upload_btn{
+    width: 300px;
+    height: 300px;
+}
+
+.footer_fix_btn{
+	font-size: 35px;
+	background: #7C99AC;
+	color: #fff;
+	/* position: absolute;
+	bottom: 0; */
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+}
