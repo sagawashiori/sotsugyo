@@ -1,5 +1,5 @@
 import sqlite3
-from flask import Flask, render_template, request, redirect
+from flask import Flask, render_template, request, redirect, session
 
 app = Flask(__name__)
 
@@ -36,6 +36,34 @@ def register_post():
     return redirect('/login')
 
 
+@app.route('/login')
+def login_get():
+    if 'user_id' in session:  # もしsessionに user_id が含まれていたら
+        return redirect('/top')  # .list ページにリダイレクト
+    return render_template('login.html')
+
+
+@app.route('/login', methods=['POST'])
+def login_post():
+    if 'user_id' in session:  # もしsessionに user_id が含まれていたら
+        return redirect('/top')  # .list ページにリダイレクト
+    mail = request.form.get('mail')
+    password = request.form.get('password')
+
+    conn = sqlite3.connect('sotu.db')
+    c = conn.cursor()
+    c.execute('SELECT id FROM users WHERE mail = ? AND pass = ?',
+              (mail, password))
+    user = c.fetchone()  # (1, )
+    conn.close()
+
+    if user is None:  # 送られてきた mailとpassに一致するuserがいなかった場合
+        return render_template('login.html')
+    else:
+        session['user_id'] = user[0]
+        return redirect('/top')
+
+
 #--------maha編集箇所----------#
 
 
@@ -55,6 +83,8 @@ def image_upload():
 def main_upload():
     return render_template("main_upload.html")
 #--------maino編集箇所----------#
+
+
 
 
 #--------sagawa-san編集箇所----------#
