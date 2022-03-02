@@ -1,11 +1,14 @@
 {% extends 'base.html' %}
 
 {% block content%}
-{% block link %}    <script src="../static/js/jquery-3.6.0.js"></script>
+
+{% block link %} 
+<head> <script src="../static/js/jquery-3.6.0.js"></script>
     <script src="../static/js/home.js"></script>
     <link rel="stylesheet" href="../static/css/home.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">{% endblock %}
+</head>
 
-<body>
     <div class="category_select">
         <select name="month">
             <option value="jan">フィルター</option>
@@ -26,7 +29,7 @@
             <i class="fa-brands fa-twitter-square"></i>
         <a class="twitter-share-button"
         href="https://twitter.com/intent/tweet?text=総アイテム数は◎個です">
-      Tweet</a></div>
+      </a></div>
 
 
         <main class="container">
@@ -38,16 +41,7 @@
                
                 <li class="item">
                     <div>
-                        
-                        <img src="../static/img/16292542870007a7e7b6eeeb51ba23868f76457259_thumbnail_600x.webp" alt="動物">
-                        <h2>アイテム1</h2>
-                        
-                        <button>手放すリストに追加</button>
-                    </div>
-                </li>
-                <li class="item">
-                    <div>
-                        
+                        <i class="fa-solid fa-ellipsis"></i><br>
                         <img src="../static/img/16292542870007a7e7b6eeeb51ba23868f76457259_thumbnail_600x.webp" alt="動物2">
                         <h2>アイテム1</h2>
                         
@@ -56,7 +50,16 @@
                 </li>
                 <li class="item">
                     <div>
+                        <i class="fa-solid fa-ellipsis"></i><br>
+                        <img src="../static/img/16292542870007a7e7b6eeeb51ba23868f76457259_thumbnail_600x.webp" alt="動物2">
+                        <h2>アイテム1</h2>
                         
+                        <button>手放すリストに追加</button>
+                    </div>
+                </li>
+                <li class="item">
+                    <div>
+                        <i class="fa-solid fa-ellipsis"></i><br>
                         <img src="../static/img/16292542870007a7e7b6eeeb51ba23868f76457259_thumbnail_600x.webp" alt="動物3">
                         <h2>アイテム1</h2>
                         
@@ -65,7 +68,7 @@
                 </li>
                 <li class="item">
                     <div>
-                        
+                        <i class="fa-solid fa-ellipsis"></i><br>
                         <img src="../static/img/16292542870007a7e7b6eeeb51ba23868f76457259_thumbnail_600x.webp" alt="動物4">
                         <h2>アイテム1</h2>
                         <button>手放すリストに追加</button>
@@ -73,7 +76,7 @@
                 </li>
                 <li class="item">
                     <div>
-                        
+                        <i class="fa-solid fa-ellipsis"></i><br>
                         <img src="../static/img/16292542870007a7e7b6eeeb51ba23868f76457259_thumbnail_600x.webp" alt="動物5">
                         <h2>アイテム1</h2>
                         
@@ -85,6 +88,7 @@
               <ul class="horizontal-items">
                 <li class="item">
                     <div>
+                        <i class="fa-solid fa-ellipsis"></i><br>
                         <img src="../static/img/16292542870007a7e7b6eeeb51ba23868f76457259_thumbnail_600x.webp" alt="動物">
                         <h2>アイテム1</h2>
                         
@@ -93,7 +97,7 @@
                 </li>
                 <li class="item">
                     <div>
-                        
+                        <i class="fa-solid fa-ellipsis"></i><br>
                         <img src="../static/img/16292542870007a7e7b6eeeb51ba23868f76457259_thumbnail_600x.webp" alt="動物2">
                         <h2>アイテム1</h2>
                         
@@ -102,7 +106,7 @@
                 </li>
                 <li class="item">
                     <div>
-                        
+                        <i class="fa-solid fa-ellipsis"></i><br>
                         <img src="../static/img/16292542870007a7e7b6eeeb51ba23868f76457259_thumbnail_600x.webp" alt="動物3">
                         <h2>アイテム1</h2>
                         
@@ -111,7 +115,7 @@
                 </li>
                 <li class="item">
                     <div>
-                        
+                        <i class="fa-solid fa-ellipsis"></i><br>
                         <img src="../static/img/16292542870007a7e7b6eeeb51ba23868f76457259_thumbnail_600x.webp" alt="動物4">
                         <h2>アイテム1</h2>
                         
@@ -120,7 +124,7 @@
                 </li>
                 <li class="item">
                     <div>
-                       
+                        <i class="fa-solid fa-ellipsis"></i><br>
                         <img src="../static/img/16292542870007a7e7b6eeeb51ba23868f76457259_thumbnail_600x.webp" alt="動物5">
                         <h2>アイテム1</h2>
                         
@@ -133,7 +137,7 @@
               <ul class="horizontal-items">
                 <li class="item">
                     <div>
-                        
+                        <i class="fa-solid fa-ellipsis"></i><br>
                         <img src="../static/img/16292542870007a7e7b6eeeb51ba23868f76457259_thumbnail_600x.webp" alt="動物">
                         <h2>アイテム1</h2>
                         
@@ -142,7 +146,7 @@
                 </li>
                 <li class="item">
                     <div>
-                        
+                        <i class="fa-solid fa-ellipsis"></i><br>
                         <img src="../static/img/16292542870007a7e7b6eeeb51ba23868f76457259_thumbnail_600x.webp" alt="動物2">
                         <h2>アイテム1</h2>
                         
@@ -151,7 +155,7 @@
                 </li>
                 <li class="item">
                     <div>
-                        
+                        <i class="fa-solid fa-ellipsis"></i><br>
                         <img src="../static/img/16292542870007a7e7b6eeeb51ba23868f76457259_thumbnail_600x.webp" alt="動物3">
                         <h2>アイテム1</h2>
                         
@@ -160,7 +164,7 @@
                 </li>
                 <li class="item">
                     <div>
-                       
+                        <i class="fa-solid fa-ellipsis"></i><br>
                         <img src="../static/img/16292542870007a7e7b6eeeb51ba23868f76457259_thumbnail_600x.webp" alt="動物4">
                         <h2>アイテム1</h2>
                         
@@ -169,7 +173,7 @@
                 </li>
                 <li class="item">
                     <div>
-                        
+                        <i class="fa-solid fa-ellipsis"></i><br>
                         <img src="../static/img/16292542870007a7e7b6eeeb51ba23868f76457259_thumbnail_600x.webp" alt="動物5">
                         <h2>アイテム1</h2>
                         
@@ -180,9 +184,9 @@
         </main>
     
 
-    {% block content % }
+    
 
     {% endblock %}
     
     
-</body>
+

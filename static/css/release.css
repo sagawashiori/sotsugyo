@@ -1,8 +1,4 @@
-section{
-    display: flex;
-   
-    
-}
+
 
 
 
@@ -12,10 +8,10 @@ ul{
 button{
     background-color:#7C99AC ;
     color: #fff;
-    width: 50%;
-    line-height: 20px;
+    width: 70%;
+    height: 30px;
     border: none;
-    margin-top: 10px;
+    margin: 10px 0;
     font-size: 3px;
     
 }
@@ -39,21 +35,23 @@ h1{
     font-size: 25px;
     margin-bottom: 30px;
 }
-nav{width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-     
-   
-}
+
 h2{
     text-align: center;
     font-size: 10px;
     color:#7F7F86;
 }
 
-div{
+.r_list div{
     width: 50%;
-    text-align: center;
     
     
+}
+
+.r_list{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
 }
