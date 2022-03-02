@@ -2,16 +2,15 @@
 
 {% block content%}
 
-<head>
-	<link rel="stylesheet" href="../static/css/image_upload.css" />
-</head>
 
-<h1>アイテムの画像をアップロードして下さい</h1>
+{% block link %}<link rel="stylesheet" href="../static/css/image_upload.css" />{% endblock %}
 
 
-<form action="/main_upload" method="post">
-	<input class="upload_btn" type="submit" name="upload" value="＋">
-</form>
+<p>アイテムの画像をアップロードして下さい</p>
+
+<a href="/main_upload">
+	<button type="button">＋</button>
+</a>
 
 <div class="footer_fix_btn">
 	<a href="../templates/home.html"><i class="fa fa-fw solid fa-house"></i></a>
