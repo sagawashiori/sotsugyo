@@ -39,14 +39,15 @@ h2 {color:#7F7F86;
 button{
     background-color:#7C99AC ;
     color: #fff;
-    width: 70%;
+    width: 100%;
     line-height: 30px;
     border: none;
+    font-size: 10px;
 
 }
 
 .category_select{
-    
+    line-height: 50px;
     text-align: center;
 
     
@@ -59,8 +60,8 @@ select{
 }
 
 .horizontal-items{
-    border-bottom
-    : #7C99AC;
+    
+    margin-bottom: 50px;
 }
 
 h1{
@@ -69,10 +70,38 @@ h1{
 }
 
 ul{
-    list-style:none
+    list-style:none;
+    padding-bottom:20px ;
+    border-bottom : 1px solid #7C99AC;
 }
 
 div img{
-    width: 100%;
-    height: 70%;
+    max-width: 100%;
+    
+}
+h3{
+    text-align: left;
+}
+section{
+    display: flex;
+}
+h3{
+    display: inline-block;
+    float: left;
+    
+    
+}
+h4{display: inline-block;
+    margin-right: 100px;
+}
+
+img{
+    border:1px solid #7F7F86;
+}
+.fa-solid {
+    justify-content: right;
+}
+
+.fa-solid {
+    float: right;
 }

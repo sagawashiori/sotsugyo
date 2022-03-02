@@ -1,8 +1,4 @@
-section{
-    display: flex;
-   
-    
-}
+
 
 
 
@@ -12,10 +8,11 @@ ul{
 button{
     background-color:#7C99AC ;
     color: #fff;
-    width: 40%;
-    line-height: 30px;
+    width: 70%;
+    height: 30px;
     border: none;
-    margin-top: 20px;
+    margin: 10px 0;
+    font-size: 3px;
     
 }
 
@@ -23,6 +20,9 @@ button{
 img{
     height: 50%;
     width: 80%;
+    
+        border:1px solid #7F7F86;
+    
     }
 
 
@@ -32,23 +32,26 @@ img{
 h1{
     text-align: center;
     margin-top: 50px;
-    font-size: 30px;
+    font-size: 25px;
+    margin-bottom: 30px;
 }
-nav{width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-     
-   
-}
+
 h2{
     text-align: center;
     font-size: 10px;
     color:#7F7F86;
 }
 
-div{
-    width: 70%;
-    text-align: center;
-    margin-top: 30px;
+.r_list div{
+    width: 50%;
     
+    
+}
+
+.r_list{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
 }
