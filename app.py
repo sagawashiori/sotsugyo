@@ -28,7 +28,7 @@ def register_post():
     name = request.form.get('name')
     mail = request.form.get('mail')
     password = request.form.get('password')
-    conn = sqlite3.connect('sotu.db')
+    conn = sqlite3.connect('sotu1.db')
     c = conn.cursor()
     c.execute("INSERT INTO users VALUES(null,?,?,?)", (name, mail, password))
     conn.commit()
