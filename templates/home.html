@@ -1,15 +1,10 @@
-<!DOCTYPE html>
-<html lang="ja">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="サイトの説明文">
-    <title>タスク管理アプリ</title>
-    <script src="../static/js/jquery-3.6.0.js"></script>
+{% extends 'base.html' %}
+
+{% block content%}
+{% block link %}    <script src="../static/js/jquery-3.6.0.js"></script>
     <script src="../static/js/home.js"></script>
     <link rel="stylesheet" href="../static/css/home.css">
-</head>
+
 <body>
     <div class="category_select">
         <select name="month">
@@ -38,9 +33,9 @@
             <h1>総アイテム数  85/200
             </h1>
 
-    
+            <h3>洋服</h3><h4>アイテム数　◎</h4>
             <ul class="horizontal-items">
-                <h3></h3>
+               
                 <li class="item">
                     <div>
                         
@@ -73,7 +68,6 @@
                         
                         <img src="../static/img/16292542870007a7e7b6eeeb51ba23868f76457259_thumbnail_600x.webp" alt="動物4">
                         <h2>アイテム1</h2>
-                        <
                         <button>手放すリストに追加</button>
                     </div>
                 </li>
@@ -87,7 +81,7 @@
                     </div>
                 </li>
               </ul>
-
+              <h3>日用品</h3><h4>アイテム数 ◎</h4>
               <ul class="horizontal-items">
                 <li class="item">
                     <div>
@@ -134,11 +128,12 @@
                     </div>
                 </li>
               </ul>
-
+              
+              <h3>日用品</h3><h4>アイテム数 ◎</h4>
               <ul class="horizontal-items">
                 <li class="item">
                     <div>
-                        <h2>アイテム1</h2>
+                        
                         <img src="../static/img/16292542870007a7e7b6eeeb51ba23868f76457259_thumbnail_600x.webp" alt="動物">
                         <h2>アイテム1</h2>
                         
@@ -147,7 +142,7 @@
                 </li>
                 <li class="item">
                     <div>
-                        <h2>アイテム2</h2>
+                        
                         <img src="../static/img/16292542870007a7e7b6eeeb51ba23868f76457259_thumbnail_600x.webp" alt="動物2">
                         <h2>アイテム1</h2>
                         
@@ -156,7 +151,7 @@
                 </li>
                 <li class="item">
                     <div>
-                        <h2>アイテム3</h2>
+                        
                         <img src="../static/img/16292542870007a7e7b6eeeb51ba23868f76457259_thumbnail_600x.webp" alt="動物3">
                         <h2>アイテム1</h2>
                         
@@ -165,7 +160,7 @@
                 </li>
                 <li class="item">
                     <div>
-                        <h2>アイテム4</h2>
+                       
                         <img src="../static/img/16292542870007a7e7b6eeeb51ba23868f76457259_thumbnail_600x.webp" alt="動物4">
                         <h2>アイテム1</h2>
                         
@@ -174,7 +169,7 @@
                 </li>
                 <li class="item">
                     <div>
-                        <h2>アイテム5</h2>
+                        
                         <img src="../static/img/16292542870007a7e7b6eeeb51ba23868f76457259_thumbnail_600x.webp" alt="動物5">
                         <h2>アイテム1</h2>
                         
@@ -189,8 +184,5 @@
 
     {% endblock %}
     
-    <footer>
-        
-    </footer>
+    
 </body>
-</html>
