@@ -1,11 +1,16 @@
-h1{
-    font-size: 20px;
-    margin: 100px;
+p{
+    font-size: 15px;
+    margin-bottom: 50px;
+	margin-top: 100px;
 }
 
-.upload_btn{
-    width: 300px;
-    height: 300px;
+a button{
+    width: 250px;
+    height: 200px;
+	margin-bottom: 200px;
+	background: #7C99AC;
+	color: #fff;
+	border: none;
 }
 
 .footer_fix_btn{
