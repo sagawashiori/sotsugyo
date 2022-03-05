@@ -8,9 +8,14 @@
 
 <p>アイテムの画像をアップロードして下さい</p>
 
-<a href="/main_upload">
-	<button type="button">＋</button>
-</a>
+<img src="/static/img/" alt="" class="prof_img">
+<form action="/image_upload" method="post" enctype="multipart/form-data">
+	<label class="image_select_button" for="file">
+		<p>+</p>
+	</label>
+	<input  class="file_input" type="file" name="upload" id="file"></br>
+	<input class="upload_btn" type="submit" value="画像アップロード"></br>
+</form>
 
 <div class="footer_fix_btn">
 	<a href="../templates/home.html"><i class="fa fa-fw solid fa-house"></i></a>
