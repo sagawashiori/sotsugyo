@@ -6,14 +6,14 @@
 
 
 <body>
-    <form action="/home" method="post">
+    <form action="" method="post">
 
         <div>
             <img src="https://www.felissimo.co.jp/image_link/91AA57F29408FBBA0574C63AC4AB05F5.jpg" alt="セーターの画像" width="250" height="300">
         </div>
 
-    <div>
-			<input class="form_box1" type="text" name="name" maxlength="100" placeholder="アイテム名">
+        <div>
+			<input class="form_box1" type="text" name="item_name" maxlength="100" placeholder="アイテム名">
 		</div>
 		  
             <select class="category">        
@@ -30,10 +30,12 @@
         <div>
             <input class="form_box2" type="date" name="date" maxlength="100" placeholder="カレンダー">
         </div>
+	    <input class="register_btn" type="submit" name="save" value="登録">
+
     </form>
-    <a href="/home">
+    <!-- <a href="/home">
         <button type="button">登録</button>
-    </a>
+    </a> -->
     
     <div class="footer_fix_btn">
         <a href="../templates/home.html"><i class="fa fa-fw solid fa-house"></i></a>

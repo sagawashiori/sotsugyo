@@ -4,13 +4,18 @@ p{
 	margin-top: 100px;
 }
 
-a button{
-    width: 250px;
-    height: 200px;
-	margin-bottom: 200px;
+.image_select_button {
+	width: 250px;
+	height: 200px;
+	margin-bottom: 20px;
 	background: #7C99AC;
 	color: #fff;
 	border: none;
+	display: inline-block;
+}
+
+.file_input {
+	display: none;
 }
 
 .footer_fix_btn{
@@ -22,4 +27,15 @@ a button{
 	width: 100%;
 	display: flex;
 	justify-content: space-around;
+	position: absolute;
+	bottom: 0px;
+}
+
+.upload_btn {
+	width: 250px;
+	height: 50px;
+	margin-bottom: 200px;
+	background: #7C99AC;
+	color: #fff;
+	border: none;
 }
